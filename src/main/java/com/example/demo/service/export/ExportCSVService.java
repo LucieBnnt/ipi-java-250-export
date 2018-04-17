@@ -1,24 +1,31 @@
 package com.example.demo.service.export;
 
 import com.example.demo.dto.ClientDTO;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.io.Writer;
+import java.io.PrintWriter;
 import java.util.List;
 
 @Service
 public class ExportCSVService {
+    public void export(PrintWriter printWriter, List<ClientDTO> clients) {
+        Workbook workbook = new XSSFWorkbook();
+        Sheet sheet = workbook.createSheet("clients");
 
-    public void export(Writer printWriter, List<ClientDTO> clients) throws IOException {
-        printWriter.write("Nom;");
-        printWriter.write("Prenom;");
-        for (ClientDTO client : clients) {
-            printWriter.write(client.getNom());
+
+        for(ClientDTO clientDTO:clients){
+            printWriter.write(clientDTO.getNom());
             printWriter.write(";");
-            printWriter.write(client.getPrenom());
+            printWriter.write(clientDTO.getPrenom());
+            printWriter.write(";");
             printWriter.write("\n");
         }
+        printWriter.close();
 
     }
 }

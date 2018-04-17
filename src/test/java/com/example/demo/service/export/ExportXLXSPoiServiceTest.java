@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExportXLXSPoiServiceTest {
-
+/*
     @Test
     public void export() throws IOException {
         List<ClientDTO> clientDTOS = new ArrayList<>();
@@ -23,9 +23,9 @@ public class ExportXLXSPoiServiceTest {
         tempFile.createNewFile();
         FileOutputStream fos = new FileOutputStream(tempFile);
 
-        ExportXLSXService exportXLSXService = new ExportXLSXService();
-        exportXLSXService.export(fos, clientDTOS);
+        ExportXLXSPoiService exportXLXSPoiService = new ExportXLXSPoiService();
+        exportXLXSPoiService.export(fos, clientDTOS);
 
         fos.close();
-    }
+    }*/
 }

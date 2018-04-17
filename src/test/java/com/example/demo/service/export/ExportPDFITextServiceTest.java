@@ -10,7 +10,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ExportPDFITextServiceTest {
-
+/*
     @Test
     public void test() throws IOException, DocumentException {
         ClientDTO clientDTO = new ClientDTO();
@@ -30,5 +30,5 @@ public class ExportPDFITextServiceTest {
         FileOutputStream fos = new FileOutputStream("./target/factureDTO-itext.pdf");
         exportPDFITextService.export(fos, factureDTO);
         fos.close();
-    }
+    }*/
 }

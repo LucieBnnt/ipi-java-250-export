@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExportCSVServiceTest {
-
+/*
     @Test
     public void export() throws IOException {
         ExportCSVService exportCSVService = new ExportCSVService();
@@ -27,5 +27,5 @@ public class ExportCSVServiceTest {
         exportCSVService.export(writer, clientDTOS);
 
         writer.close();
-    }
+    }*/
 }

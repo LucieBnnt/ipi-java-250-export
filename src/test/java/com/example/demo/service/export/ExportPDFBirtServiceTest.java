@@ -10,7 +10,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ExportPDFBirtServiceTest {
-
+/*
     @Test
     public void generate() throws IOException, EngineException, DocumentException {
         FactureDTO factureDTO = new FactureDTO();
@@ -22,5 +22,5 @@ public class ExportPDFBirtServiceTest {
         new ExportPDFBirtService().export(fos, factureDTO);
 
         fos.close();
-    }
+    }*/
 }
